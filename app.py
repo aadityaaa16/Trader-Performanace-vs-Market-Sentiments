@@ -19,7 +19,7 @@ with open('trading_analysis_model.pkl', 'rb') as f:
 @st.cache_data
 def prepare_data():
    fg = pd.read_csv("data/fear_greed_index.csv")
-   td = pd.read_csv("data/historical_data.csv")
+   td = pd.read_csv("data/historical_data_compressed_1774647016961.zip")
     # clean
     td = td.drop_duplicates(subset=['Account', 'Timestamp IST', 'Trade ID'])
     td['datetime'] = pd.to_datetime(td['Timestamp IST'], format='%d-%m-%Y %H:%M', errors='coerce')
