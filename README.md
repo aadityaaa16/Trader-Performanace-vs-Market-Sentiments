@@ -59,7 +59,7 @@ Run all cells top-to-bottom (Kernel → Restart & Run All).
 pip install streamlit
 streamlit run app.py
 ```
-Then open http://localhost:8501 in your browser.
+streamlit url: https://trader-performanace-vs-market-sentiments-hmcuwevuovwspgjxdq2hf.streamlit.app/
 
 ---
 
